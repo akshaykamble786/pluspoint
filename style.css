@@ -1,0 +1,38 @@
+body {
+    color: "white";
+    margin: 0;
+}
+
+#navbar {
+    height: 80px;
+    width: 1366px;
+    background-color: #030825;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+span {
+    color: #fff;
+    font-size: large;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    font-size:large;
+}
+
+#location {
+    color: 'white';
+}
+
+#searchbar {
+    height: 40px;
+    width: 380px;
+    border-radius: 6px;
+}
+
+#Menu{
+    margin-right: 10px;
+}
