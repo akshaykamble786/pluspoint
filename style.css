@@ -4,6 +4,7 @@ body {
 }
 
 #navbar {
+    position: sticky;
     height: 80px;
     width: 1366px;
     background-color: #030825;
@@ -25,14 +26,24 @@ a {
 
 #location {
     color: 'white';
+    position: relative;
+    right:10px;
 }
 
 #searchbar {
     height: 40px;
-    width: 380px;
+    width: 450px;
     border-radius: 6px;
+    position: relative;
+    right:20px;
+    
 }
 
-#Menu{
-    margin-right: 10px;
+#user{
+    position:relative;
+    right:10px;
+}
+
+#cart{
+
 }
