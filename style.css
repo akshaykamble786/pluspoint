@@ -1,3 +1,8 @@
+:root {
+    --main-color: #13172c;
+    --rest-color: #030825;
+}
+
 body {
     color: "white";
     margin: 0;
@@ -5,17 +10,23 @@ body {
     font-weight: lighter;
 }
 
+#brands-h2{
+    color:#fff;
+    padding-top:10px;
+    padding-left:110px;
+}
+
 #navbar {
     position: sticky;
     height: 75px;
     width: 1350px;
-    background-color: #030825;
+    background-color: var(--rest-color);
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
-span {
+span{
     color: #fff;
     font-size: large;
 }
@@ -61,21 +72,37 @@ a {
 #sub-navbar {
     height: 40px;
     width: 1350px;
-    background-color: #13172c;
+    background-color: var(--main-color);
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
 }
 
-.brand-container{
-    display:flex;
+.brand-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 5px;
+    background-color: var(--main-color);
+    margin-top: -4px;
+}
+
+#brand-list {
+    display: flex;
     align-items:center;
-    justify-content: space-evenly;
+    justify-content: center;
+    flex-direction: row;
+    gap:5px;
+    flex-wrap: wrap;
+    padding: 10px 30px 72px 30px ;
 }
 
-.brand-child{
-    height:130px;
-    width:135px;
-    border:1px solid black;
-    border-radius: 6px;
+.brand-child {
+    height: 150px;
+    width: 155px;
+    border: 1px solid black;
+    border-radius: 18px;
+    overflow: hidden;
 }
+
