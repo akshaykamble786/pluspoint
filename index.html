@@ -13,7 +13,7 @@
     <header>
         <nav id="navbar">
             <a href="#">
-                    <img src="images/logo.png" alt="pluspoint logo",id="logo">
+                <img src="images/logo.png" alt="pluspoint logo" ,id="logo">
             </a>
             <span id="span-location">Mumbai, 400097</span>
             <input type="search" placeholder="What are you looking for?" name="searchbar" id="searchbar">
@@ -40,34 +40,53 @@
     </header>
 
     <main>
-        <a href="#">
-        <img src="https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1715836825/Croma%20Assets/CMS/LP%20Page%20Banners/2024/Sanity/HP/May/16052024/HP_Rotating_iPhone13_16May24_en9i6z.jpg" width="1350" height="600" alt="carousel-pic">
-        </a>
+        <div class="slider">
+            <div class="slides">
+                <a href="#">
+                    <img src="images/ac.webp"
+                        width="1350" height="600" alt="ac-carousel-pic">
+                </a>
+                <a href="#">
+                    <img src="images/vivo.webp"
+                        width="1350" height="600" alt="vivo-carousel-pic">
+                </a>
+                <a href="#">
+                    <img src="images/pendrive.webp"
+                        width="1350" height="600" alt="pendrive-carousel-pic">
+                </a>
+                <a href="#">
+                    <img src="images/watch.webp"
+                        width="1350" height="600" alt="watch-carousel-pic">
+                </a>
+            </div>
+            <button class="prev" onclick="prevSlide()">&#10094;</button>
+            <button class="next" onclick="nextSlide()">&#10095;</button>
+        </div>
 
         <div class="brand-container">
             <h2 id="brands-h2">Brands We're Passionate About</h2>
-           <div id="brand-list">
-            <div class="brand-child" id="brand-child1">
-                <img src="images/ui.png" alt="ui-logo">
-            </div>
-            <div class="brand-child" id="brand-child2">
-                <img src="images/boat.png" alt="boat-logo">
-            </div>
-            <div class="brand-child" id="brand-child3">
-                <img src="images/jio.png" alt="jio-logo">
-            </div>
-            <div class="brand-child" id="brand-child4">
-                <img src="images/mi.png" alt="mi-logo">
-            </div>
-            <div class="brand-child" id="brand-child5">
-                <img src="images/samsung.png" alt="samsung-logo">
-            </div>
-            <div class="brand-child" id="brand-child6">
-                <img src="images/oppoo.png" alt="oppo-logo">
-            </div>
-            <div class="brand-child" id="brand-child7">
-                <img src="images/oneplus.png" alt="oneplus-logo">
-            </div>
+            <div id="brand-list">
+                <div class="brand-child" id="brand-child1">
+                    <img src="images/ui.png" alt="ui-logo">
+                </div>
+                <div class="brand-child" id="brand-child2">
+                    <img src="images/boat.png" alt="boat-logo">
+                </div>
+                <div class="brand-child" id="brand-child3">
+                    <img src="images/jio.png" alt="jio-logo">
+                </div>
+                <div class="brand-child" id="brand-child4">
+                    <img src="images/mi.png" alt="mi-logo">
+                </div>
+                <div class="brand-child" id="brand-child5">
+                    <img src="images/samsung.png" alt="samsung-logo">
+                </div>
+                <div class="brand-child" id="brand-child6">
+                    <img src="images/oppoo.png" alt="oppo-logo">
+                </div>
+                <div class="brand-child" id="brand-child7">
+                    <img src="images/oneplus.png" alt="oneplus-logo">
+                </div>
             </div>
         </div>
 
@@ -77,4 +96,5 @@
     </footer>
 </body>
 <script src="index.js"></script>
+
 </html>

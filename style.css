@@ -79,6 +79,57 @@ a {
     flex-wrap: wrap;
 }
 
+.slider {
+    position: relative;
+    margin: auto;
+    width: 100%;
+    max-width: 1350px; 
+    overflow: hidden;
+}
+
+.slides img {
+    display: none;
+    width: 100%;
+}
+
+img.displaySlide {
+    display: block;
+    animation: fade 1.5s;
+}
+
+button.prev, button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+button.prev {
+    left: 10px;
+}
+
+button.next {
+    right: 10px;
+}
+
+button.prev:hover, button.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+@keyframes fade {
+    from{
+        opacity:0.5
+    }
+    to{
+        opacity: 1;
+    }
+}
+
 .brand-container {
     display: flex;
     flex-direction: column;
