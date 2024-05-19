@@ -1,3 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,500&display=swap');
+
+h1, a, button, nav{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-size:16px;
+    font-weight: 500;
+    font-style: normal;
+}
+
 :root {
     --main-color: #13172c;
     --rest-color: #030825;
@@ -6,14 +16,16 @@
 body {
     color: "white";
     margin: 0;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-weight: lighter;
+    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: lighter; */
 }
 
-#brands-h2{
+#brands-h1{
     color:#fff;
-    padding-top:10px;
+    font-size: x-large;
+    padding-top:20px;
     padding-left:110px;
+    
 }
 
 #navbar {
