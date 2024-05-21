@@ -1,37 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,500&display=swap');
 
-h1, a, button, nav{
-    font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
-    font-size:16px;
-    font-weight: 500;
-    font-style: normal;
-}
-
 :root {
     --main-color: #13172c;
     --rest-color: #030825;
 }
 
-body {
-    color: "white";
-    margin: 0;
-    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-weight: lighter; */
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    color:"white";
+    overflow-x: hidden;
 }
 
-#brands-h1{
-    color:#fff;
-    font-size: x-large;
-    padding-top:20px;
-    padding-left:110px;
-    
+h1, a, button, nav{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 10;
+    font-style: normal;
 }
 
 #navbar {
     position: sticky;
     height: 75px;
-    width: 1350px;
+    width: 100%;
     background-color: var(--rest-color);
     display: flex;
     justify-content: space-around;
@@ -61,7 +53,7 @@ a {
     border-radius: 6px;
     position: relative;
     right: 20px;
-
+    
 }
 
 #user {
@@ -106,11 +98,12 @@ a {
 
 img.displaySlide {
     display: block;
-    animation: fade 1.5s;
 }
 
 button.prev, button.next {
     position: absolute;
+    height:50px;
+    width:40px;
     top: 50%;
     transform: translateY(-50%);
     background-color: rgba(0, 0, 0, 0.5);
@@ -133,15 +126,6 @@ button.prev:hover, button.next:hover {
     background-color: rgba(0, 0, 0, 0.8);
 }
 
-@keyframes fade {
-    from{
-        opacity:0.5
-    }
-    to{
-        opacity: 1;
-    }
-}
-
 .brand-container {
     display: flex;
     flex-direction: column;
@@ -149,6 +133,15 @@ button.prev:hover, button.next:hover {
     gap: 5px;
     background-color: var(--main-color);
     margin-top: -4px;
+    padding-bottom: 30px;
+}
+
+#brands-h1{
+    color:#fff;
+    font-size: x-large;
+    padding-top:20px;
+    padding-left:110px;
+    margin-top:30px; 
 }
 
 #brand-list {
@@ -156,7 +149,7 @@ button.prev:hover, button.next:hover {
     align-items:center;
     justify-content: center;
     flex-direction: row;
-    gap:5px;
+    gap:7px;
     flex-wrap: wrap;
     padding: 10px 30px 72px 30px ;
 }
@@ -164,8 +157,47 @@ button.prev:hover, button.next:hover {
 .brand-child {
     height: 150px;
     width: 155px;
-    border: 1px solid black;
     border-radius: 18px;
     overflow: hidden;
+    margin-top: 20px;
 }
 
+.brand-child img{
+    height:100%;
+    width:100%;
+    aspect-ratio: 3/2;
+    object-fit:contain;
+}
+
+.deals{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    width:100%;
+    padding:30px;
+    background-color: var(--main-color);
+    margin-top: -1px;
+    padding-bottom: 80px;
+}
+
+.deal-list{
+    display: flex;
+    gap:20px;
+    padding-left: 80px;
+    flex-wrap: wrap;
+}
+
+.deal{
+    height:370px;
+    width:270px;
+    border: 1px solid black;
+    border-radius: 0.8rem;
+    background-color: #fff;
+}
+
+#deals-h1{
+    background-color: var(--main-color);
+    color:#fff;
+    font-size: x-large;
+    padding-left: 110px;
+    padding-top: 20px;
+}
