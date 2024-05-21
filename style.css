@@ -3,20 +3,21 @@
 :root {
     --main-color: #13172c;
     --rest-color: #030825;
+    --gradient: background-color: linear-gradient(135deg, #13172c, #030825, #4a3f7a, #263b59);
+
 }
 
 *{
     margin:0;
     padding: 0;
     box-sizing: border-box;
-    color:"white";
-    overflow-x: hidden;
+    color:#fff;
 }
 
 h1, a, button, nav{
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 10;
+    font-weight: 500;
     font-style: normal;
 }
 
@@ -28,6 +29,7 @@ h1, a, button, nav{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    padding:25px 35px 25px 35px;
 }
 
 span{
@@ -50,10 +52,9 @@ a {
 #searchbar {
     height: 40px;
     width: 450px;
-    border-radius: 6px;
+    border-radius: 0.5rem;
     position: relative;
     right: 20px;
-    
 }
 
 #user {
@@ -75,7 +76,7 @@ a {
 
 #sub-navbar {
     height: 40px;
-    width: 1350px;
+    width:100%;
     background-color: var(--main-color);
     display: flex;
     justify-content: space-around;
@@ -83,17 +84,22 @@ a {
     flex-wrap: wrap;
 }
 
+.subnavbar-font{
+    font-size:16px;
+}
+
 .slider {
     position: relative;
     margin: auto;
     width: 100%;
-    max-width: 1350px; 
+    max-width:1350px;
     overflow: hidden;
 }
 
 .slides img {
     display: none;
     width: 100%;
+    flex: 1 0 100%;
 }
 
 img.displaySlide {
@@ -181,17 +187,19 @@ button.prev:hover, button.next:hover {
 
 .deal-list{
     display: flex;
+    padding-left:80px;
     gap:20px;
-    padding-left: 80px;
     flex-wrap: wrap;
 }
 
-.deal{
-    height:370px;
+.deal-box{
+    height:400px;
     width:270px;
     border: 1px solid black;
     border-radius: 0.8rem;
-    background-color: #fff;
+    background: linear-gradient(135deg, #13172c, #030825, #4a3f7a, #263b59);
+    text-align: center;
+    padding:20px;
 }
 
 #deals-h1{
@@ -200,4 +208,25 @@ button.prev:hover, button.next:hover {
     font-size: x-large;
     padding-left: 110px;
     padding-top: 20px;
+}
+
+.section-cart-btn{
+    height:40px;
+    width:170px;
+    border-radius: 0.6rem;
+    background-color:white;
+    color:black;
+    border:1px solid black;
+    position: relative;
+    top:290px;
+}
+
+#span-line{
+    position:relative;
+    top:185px;
+}
+
+#span-price{
+    position: relative;
+    top:190px;
 }
