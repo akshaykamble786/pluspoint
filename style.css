@@ -3,8 +3,8 @@
 :root {
     --main-color: #13172c;
     --rest-color: #030825;
-    --gradient: background-color: linear-gradient(135deg, #13172c, #030825, #4a3f7a, #263b59);
-
+    --background-gradient: linear-gradient(135deg, #13172c, #030825, #4a3f7a, #263b59);
+    --banner-gradient: linear-gradient(135deg, #6372ff, #9d8cff, #d1afff);
 }
 
 *{
@@ -14,11 +14,14 @@
     color:#fff;
 }
 
-h1, a, button, nav{
+h1, h2, a, button, nav, span, p{
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
+}
+a:hover{
+    -webkit-text-fill-color: rgb(165, 156, 156);
 }
 
 #navbar {
@@ -55,6 +58,7 @@ a {
     border-radius: 0.5rem;
     position: relative;
     right: 20px;
+    color:black;
 }
 
 #user {
@@ -139,7 +143,6 @@ button.prev:hover, button.next:hover {
     gap: 5px;
     background-color: var(--main-color);
     margin-top: -4px;
-    padding-bottom: 30px;
 }
 
 #brands-h1{
@@ -197,7 +200,7 @@ button.prev:hover, button.next:hover {
     width:270px;
     border: 1px solid black;
     border-radius: 0.8rem;
-    background: linear-gradient(135deg, #13172c, #030825, #4a3f7a, #263b59);
+    background: var(--background-gradient);
     text-align: center;
     padding:20px;
 }
@@ -207,7 +210,6 @@ button.prev:hover, button.next:hover {
     color:#fff;
     font-size: x-large;
     padding-left: 110px;
-    padding-top: 20px;
 }
 
 .section-cart-btn{
@@ -221,6 +223,14 @@ button.prev:hover, button.next:hover {
     top:290px;
 }
 
+.section-cart-btn:hover{
+    background-color:rgb(85, 172, 85)
+}
+
+.section-cart-btn:active{
+    transform: scale(1.05,1.05);
+}
+
 #span-line{
     position:relative;
     top:185px;
@@ -229,4 +239,28 @@ button.prev:hover, button.next:hover {
 #span-price{
     position: relative;
     top:190px;
+}
+
+.why-banner{
+    background-color: var(--main-color);
+}
+
+#why-h1{
+    color:#fff;
+    font-size: x-large;
+    padding-left: 110px;
+}
+
+.why-section{
+    background-color: var(--main-color);
+    display:grid;
+    place-items: center;
+    padding:30px;
+}
+
+#why-article{
+    height:300px;
+    width:1130px;
+    border-radius: 0.8rem;
+    background: var(--banner-gradient);
 }
