@@ -256,27 +256,37 @@ button.next:hover {
     top: 190px;
 }
 
-
-.why-banner{
-    background-color: var(--main-color);
+.banner{
+    display: grid;
+    place-items:center;
+    padding-bottom: 80px;
 }
 
-#why-h1{
+#banner-h1{
     color:#fff;
     font-size: x-large;
     padding-left: 110px;
+    margin-bottom:25px;
 }
 
-.why-section{
-    background-color: var(--main-color);
-    display:grid;
-    place-items: center;
-    padding:30px;
-}
-
-#why-article{
+.banner-section{
     height:340px;
-    width:1130px;
+    width:1140px;
     border-radius: 0.8rem;
     background: var(--banner-gradient);
+    padding:30px;
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content: space-around;
 }
+
+.banner-article{
+    height:200px;
+    width:200px;
+}
+
+.banner h2{
+    padding:10px 10px 10px 0px;
+}
+
