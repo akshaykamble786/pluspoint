@@ -4,7 +4,8 @@
     --main-color: #13172c;
     --rest-color: #030825;
     --background-gradient: linear-gradient(135deg, #13172c, #030825, #4a3f7a, #263b59);
-    --banner-gradient: linear-gradient(135deg, #2a3155, #61668f, #9c8fad);
+    --banner-gradient: linear-gradient(135deg, #1b2035, #243156, #485787, #6c79a3);
+    --section-gradient: linear-gradient(135deg, #0e122b, #14173e, #3b4575, #555a94);
 }
 
 * {
@@ -81,14 +82,14 @@ a {
 
 #span-user {
     position: relative;
-    bottom: 15px;
+    top:-6px;
     left: 7px;
 }
 
 #span-cart {
     position: relative;
-    bottom: 15px;
-    left: 5px;
+    top:-6px;
+    left: 7px;
 }
 
 #sub-navbar {
@@ -274,7 +275,7 @@ button.next:hover {
     width:1140px;
     border-radius: 0.8rem;
     background: var(--banner-gradient);
-    padding:30px;
+    padding:35px;
     display:flex;
     flex-direction:row;
     flex-wrap:wrap;
@@ -290,3 +291,50 @@ button.next:hover {
     padding:10px 10px 10px 0px;
 }
 
+#limited-h1{
+    color:#fff;
+    font-size: x-large;
+    padding-left: 110px;
+}
+
+.limited-time-wrapper{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    place-items:center;
+    padding:30px 30px 80px 30px;
+}
+
+.limited-time-div{
+    height:300px;
+    width:500px;
+    border-radius: 0.8rem;
+    background:var(--section-gradient);
+    border:1px solid black;
+}
+
+.limited-cart-btn{
+    height: 40px;
+    width: 170px;
+    border-radius: 0.6rem;
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    position: relative;
+    top:180px;
+    left:170px;
+}
+
+.limited-cart-btn:hover{
+    background-color: rgb(58, 57, 57);
+    color: white;
+}
+
+.limited-cart-btn:active{
+    transform: scale(1.05, 1.05);
+}
+
+.limited-time-wrapper h2{
+    text-align:center;
+    padding:15px;
+    font-size:x-large;
+}
