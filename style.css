@@ -22,6 +22,9 @@ main {
 
 h1,
 h2,
+h3,
+h4,
+h5,
 a,
 button,
 nav,
@@ -36,6 +39,7 @@ p,
 
 a:hover {
     -webkit-text-fill-color: rgb(165, 156, 156);
+    -webkit-text-fill-color: #564c7c;
 }
 
 #navbar {
@@ -176,7 +180,7 @@ button.next:hover {
     flex-direction: row;
     gap: 7px;
     flex-wrap: wrap;
-    padding: 10px 30px 72px 30px;
+    padding:40px 30px 50px 30px;
 }
 
 .brand-child {
@@ -198,10 +202,10 @@ button.next:hover {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     width: 100%;
-    padding: 30px;
     background-color: var(--main-color);
     margin-top: -1px;
-    padding-bottom: 80px;
+    padding: 45px 30px 50px 30px;
+
 }
 
 .deal-list {
@@ -261,13 +265,13 @@ button.next:hover {
     display: grid;
     place-items:center;
     padding-bottom: 80px;
+    padding:40px 30px 50px 30px;
 }
 
 #banner-h1{
     color:#fff;
     font-size: x-large;
     padding-left: 110px;
-    margin-bottom:25px;
 }
 
 .banner-section{
@@ -280,6 +284,7 @@ button.next:hover {
     flex-direction:row;
     flex-wrap:wrap;
     justify-content: space-around;
+    border:1px solid black;
 }
 
 .banner-article{
@@ -301,7 +306,7 @@ button.next:hover {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     place-items:center;
-    padding:30px 30px 80px 30px;
+    padding:40px 30px 50px 30px;
 }
 
 .limited-time-div{
@@ -312,29 +317,32 @@ button.next:hover {
     border:1px solid black;
 }
 
-.limited-cart-btn{
-    height: 40px;
-    width: 170px;
-    border-radius: 0.6rem;
-    background-color: white;
-    color: black;
-    border: 1px solid black;
+.limited-time-wrapper h2 , h1, h4{
+    text-align:left;
     position: relative;
-    top:180px;
-    left:170px;
-}
-
-.limited-cart-btn:hover{
-    background-color: rgb(58, 57, 57);
-    color: white;
-}
-
-.limited-cart-btn:active{
-    transform: scale(1.05, 1.05);
-}
-
-.limited-time-wrapper h2{
-    text-align:center;
+    top:40px;
     padding:15px;
-    font-size:x-large;
+}
+
+footer{
+    background: var(--rest-color);
+}
+
+.footer-class{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap:20px;
+    padding:80px;
+}
+
+li{
+    list-style-type: none;
+}
+
+#footer-email{
+    color:black;
+    height:50px;
+    width:200px;
+    border-radius: 0.6rem;
 }
